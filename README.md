@@ -20,18 +20,23 @@
 </p>
 
 <p align="center">
-  <a href="#-the-core-thesis-why-another-ai-writer">Core Thesis</a> •
-  <a href="#-who-should-not-use-i-have-blog">Who Should NOT Use This</a> •
-  <a href="#-sample-output">Sample Output</a> •
-  <a href="#-system-architecture-the-10-stage-pipeline">Architecture</a> •
-  <a href="#-estimated-token-budget--costs">Token Budget</a> •
-  <a href="#-quickstart--installation">Quickstart</a> •
-  <a href="#-troubleshooting-common-issues">Troubleshooting</a> •
-  <a href="#-roadmap">Roadmap</a>
+  <a href="#core-thesis">Core Thesis</a> •
+  <a href="#who-should-not-use">Who Should NOT Use This</a> •
+  <a href="#sample-output">Sample Output</a> •
+  <a href="#architecture">Architecture</a> •
+  <a href="#token-budget">Token Budget</a> •
+  <a href="#evidence-layer">Evidence Layer</a> •
+  <a href="#differentiation-score">Differentiation</a> •
+  <a href="#content-decay">Content Decay</a> •
+  <a href="#benchmarks">Benchmarks</a> •
+  <a href="#quickstart">Quickstart</a> •
+  <a href="#troubleshooting">Troubleshooting</a> •
+  <a href="#roadmap">Roadmap</a>
 </p>
 
 ---
 
+<a id="core-thesis"></a>
 ## 💡 The Core Thesis: Why Another AI Writer?
 
 The internet is drowning in **AI Article Generators**. You give them a prompt (`"Write a 2500-word SEO post about X"`), and they generate:
@@ -59,6 +64,7 @@ Inspired by the architectural rigor of [`ayghri/i-have-adhd`](https://github.com
 
 ---
 
+<a id="who-should-not-use"></a>
 ## 🚫 Who Should NOT Use i-have-blog
 
 This system is **NOT** for everyone. It is deliberately engineered for high-authority publishers:
@@ -72,6 +78,7 @@ This system is **NOT** for everyone. It is deliberately engineered for high-auth
 
 ---
 
+<a id="before-vs-after"></a>
 ## 📊 Before vs. After: What Actually Changes
 
 <table>
@@ -112,6 +119,7 @@ This system is **NOT** for everyone. It is deliberately engineered for high-auth
 
 ---
 
+<a id="sample-output"></a>
 ## 📝 Sample Output
 
 Here is what a generated `10_final_package.md` looks like for `"Facebook Ads ROAS vs MER"`:
@@ -119,7 +127,7 @@ Here is what a generated `10_final_package.md` looks like for `"Facebook Ads ROA
 <details>
 <summary><strong>🔍 Click to expand complete sample article structure</strong></summary>
 
-```markdown
+````markdown
 ---
 title: "Roas Vs Mer: The Field Guide Senior Operators Actually Use"
 slug: "roas-vs-mer"
@@ -191,11 +199,12 @@ Most public guides optimize for high-level vanity metrics rather than real contr
   ]
 }
 ```
-```
+````
 </details>
 
 ---
 
+<a id="architecture"></a>
 ## 🏛️ System Architecture: The 10-Stage Pipeline
 
 Rather than relying on an uncontrollable "multi-agent chat swarm" (which burns 5x tokens and drifts off course), `i-have-blog` implements a **Single Deterministic Orchestrator** running **Modular Pipeline Stages** with strict intermediate JSON artifacts.
@@ -251,6 +260,29 @@ flowchart TD
 
 ---
 
+<a id="artifacts"></a>
+## 🔍 Intermediate Artifacts Breakdown
+
+Every stage produces a persistent, inspectable artifact under `projects/<slug>/`, making the system **100% debuggable**:
+
+```
+projects/facebook-ads-roas-vs-mer/
+├── 01_brief.json            # Target keyword, topic, audience persona, word count goals
+├── 02_research.json         # Search intent, SERP coverage matrix, missing competitor gaps
+├── 03_strategy.json         # Entity footprints, secondary keywords, contrarian angle
+├── 04_outline.json          # Architectural headings with explicit section intent
+├── 05_evidence.json         # Evidence Ledger cataloging [claim:C-xxx] statements
+├── 06_draft.md              # Section-by-section draft with embedded claim tags
+├── 07_fact_check.json       # Audit verifying every claim against freshness policies
+├── 08_editorial_audit.json  # Cliché removal log, punchiness score, Differentiation Score
+├── 09_internal_links.json   # High-intent semantic anchor recommendations
+├── 10_final_package.json    # Complete structured JSON metadata and Schema
+└── 10_final_package.md      # Production-ready Markdown with Schema JSON-LD & FAQ
+```
+
+---
+
+<a id="token-budget"></a>
 ## 💰 Estimated Token Budget & Costs
 
 Running the complete 10-stage editorial pipeline for an authoritative 2,000 to 2,500-word article:
@@ -272,6 +304,7 @@ Running the complete 10-stage editorial pipeline for an authoritative 2,000 to 2
 
 ---
 
+<a id="evidence-layer"></a>
 ## 🏷️ Evidence Layer & Claim Registry
 
 To permanently eradicate AI hallucinations, `i-have-blog` treats factual assertions like software dependencies. During drafting, every assertion is tagged: `[claim:C-014]`.
@@ -305,6 +338,7 @@ graph LR
 
 ---
 
+<a id="differentiation-score"></a>
 ## 🎯 The Differentiation Score (0–100)
 
 How do you know if an article is truly distinctive or just a rehash of Google page 1?
@@ -322,6 +356,7 @@ $$\text{Score} = \text{Base}(50) + \Delta_{\text{Formulas}} + \Delta_{\text{Data
 
 ---
 
+<a id="content-decay"></a>
 ## 🔄 Content Decay Engine & Refresh Mode
 
 High-performing blogs win on **updating existing assets**, not just writing new ones.
@@ -340,6 +375,7 @@ graph TD
 
 ---
 
+<a id="benchmarks"></a>
 ## 🏆 Benchmark Results: Empirical Evaluation
 
 Using our blind evaluation suite in `evals/`, candidate outputs from `i-have-blog` were graded against a generic baseline LLM across 10 demanding topics.
@@ -359,6 +395,7 @@ Using our blind evaluation suite in `evals/`, candidate outputs from `i-have-blo
 
 ---
 
+<a id="quickstart"></a>
 ## ⚡ Quickstart & Installation
 
 The Python CLI is fully built and operational today.
@@ -410,6 +447,7 @@ The repository includes `gemini-extension.json` and `GEMINI.md`. Gemini CLI bind
 
 ---
 
+<a id="troubleshooting"></a>
 ## 🛠️ Troubleshooting Common Issues
 
 ### Issue: "Differentiation Score is stuck at 50.0"
@@ -434,6 +472,7 @@ The repository includes `gemini-extension.json` and `GEMINI.md`. Gemini CLI bind
 
 ---
 
+<a id="roadmap"></a>
 ## 🗺️ Roadmap
 
 ### Q4 2026
@@ -448,6 +487,7 @@ The repository includes `gemini-extension.json` and `GEMINI.md`. Gemini CLI bind
 
 ---
 
+<a id="contributing"></a>
 ## 🤝 Contributing
 
 We welcome contributions from editorial engineers and developers!
@@ -455,6 +495,7 @@ Please review [`CONTRIBUTING.md`](CONTRIBUTING.md) for testing guidelines, codin
 
 ---
 
+<a id="license"></a>
 ## 📄 License
 
 Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
