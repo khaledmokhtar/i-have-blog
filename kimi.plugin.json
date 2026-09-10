@@ -1,0 +1,12 @@
+﻿{
+  "name": "i-have-blog",
+  "version": "1.0.0",
+  "description": "AI Editorial Operating System: Research first, think second, write third, verify fourth.",
+  "license": "MIT",
+  "homepage": "https://github.com/khaledmokhtar/i-have-blog",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "I Have Blog",
+    "shortDescription": "Editorial AI System for authoritative blog posts"
+  }
+}

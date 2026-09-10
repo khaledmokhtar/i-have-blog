@@ -1,0 +1,11 @@
+﻿# Gemini agent manifest
+name = "blog-writer"
+version = "1.0.0"
+description = "AI Editorial Operating System for producing authoritative, differentiated, fact-checked blog articles."
+
+[prompt]
+file = "../SKILL.md"
+
+[parameters]
+temperature = 0.4
+top_p = 0.95

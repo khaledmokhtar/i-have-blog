@@ -1,0 +1,7 @@
+﻿name: blog-writer
+version: "1.0.0"
+description: "AI Editorial Operating System for producing authoritative, differentiated, fact-checked blog articles."
+instructions:
+  file: "../SKILL.md"
+model: "gpt-4o"
+temperature: 0.4

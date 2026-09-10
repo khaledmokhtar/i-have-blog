@@ -1,0 +1,22 @@
+﻿{
+  "clusters": [
+    {
+      "cluster_name": "Performance Marketing & Attribution",
+      "pillar_slug": "media-buying-profitability-mastery",
+      "sub_topics": [
+        "contribution-margin-guide",
+        "meta-conversions-api-audit",
+        "mer-vs-roas-benchmarks"
+      ]
+    },
+    {
+      "cluster_name": "E-Commerce Operations & Cash Flow",
+      "pillar_slug": "ecommerce-cash-flow-handbook",
+      "sub_topics": [
+        "cash-on-delivery-profitability",
+        "inventory-turnover-rates",
+        "shipping-partner-sla"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+﻿{
+  "name": "i-have-blog",
+  "version": "1.0.0",
+  "description": "AI Editorial Operating System for Gemini CLI: Research, differentiate, claim-track, and publish.",
+  "contextFileName": "GEMINI.md"
+}

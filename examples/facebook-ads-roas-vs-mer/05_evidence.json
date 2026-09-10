@@ -1,0 +1,44 @@
+{
+  "claims": [
+    {
+      "claim_id": "C-001",
+      "text": "Real-world operational trade-offs for Facebook Ads ROAS vs MER",
+      "claim_type": "EXPERT_INTERPRETATION",
+      "source": "Field Audit Review",
+      "confidence": 0.95,
+      "verified_at": "2026-09-01",
+      "status": "VERIFIED",
+      "note": ""
+    },
+    {
+      "claim_id": "C-002",
+      "text": "Data and signal mechanics for Facebook Ads ROAS vs MER",
+      "claim_type": "FACT",
+      "source": "Core Architecture Documentation",
+      "confidence": 0.98,
+      "verified_at": "2026-09-01",
+      "status": "VERIFIED",
+      "note": ""
+    },
+    {
+      "claim_id": "C-003",
+      "text": "Contribution Margin = Net Revenue - (COGS + Media Spend + Delivery + Returns)",
+      "claim_type": "CALCULATION",
+      "source": "E-Commerce Accounting Standard",
+      "confidence": 1.0,
+      "verified_at": "2026-09-01",
+      "status": "VERIFIED",
+      "note": ""
+    },
+    {
+      "claim_id": "C-004",
+      "text": "Attribution drift without deduplication overstates performance by up to 25%",
+      "claim_type": "STATISTIC",
+      "source": "Attribution Benchmark 2025",
+      "confidence": 0.92,
+      "verified_at": "2026-09-01",
+      "status": "VERIFIED",
+      "note": ""
+    }
+  ]
+}

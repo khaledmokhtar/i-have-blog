@@ -1,0 +1,26 @@
+﻿{
+  "name": "i-have-blog",
+  "version": "1.0.0",
+  "description": "AI Editorial Operating System for authoritative, differentiated, fact-checked blog articles.",
+  "main": "cli.py",
+  "scripts": {
+    "evals": "python scripts/run_evals.py",
+    "judge": "python scripts/judge.py",
+    "sync": "python scripts/sync_skills.py",
+    "test": "python -m unittest discover -s tests -v"
+  },
+  "keywords": [
+    "blogging",
+    "seo",
+    "editorial-system",
+    "llm-skills",
+    "claude-plugin",
+    "cursor-rules"
+  ],
+  "author": "Khaled Mokhtar <https://github.com/khaledmokhtar>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khaledmokhtar/i-have-blog.git"
+  }
+}

@@ -1,0 +1,30 @@
+﻿{
+  "brand_name": "Khaled Mokhtar Editorial",
+  "voice_attributes": {
+    "direct": true,
+    "analytical": true,
+    "practical": true,
+    "contrarian": true,
+    "generic_motivational": false
+  },
+  "forbidden_buzzwords": [
+    "game-changer",
+    "paradigm shift",
+    "digital transformation",
+    "in today's world",
+    "leverage synergies",
+    "guaranteed ROAS",
+    "marketing magic",
+    "silver bullet"
+  ],
+  "preferred_terminology": [
+    "Contribution Margin",
+    "MER (Marketing Efficiency Ratio)",
+    "CAC (Customer Acquisition Cost)",
+    "Net Cash Velocity",
+    "Delivery Rate",
+    "Deduplicated Signal",
+    "Incrementality"
+  ],
+  "reading_level": "Senior Operator / Founder / Senior Growth Engineer"
+}

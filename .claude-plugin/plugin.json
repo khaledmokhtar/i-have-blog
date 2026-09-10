@@ -1,0 +1,13 @@
+﻿{
+  "name": "i-have-blog",
+  "version": "1.0.0",
+  "description": "AI Editorial Operating System for Claude Code: Research first, think second, write third, verify fourth.",
+  "author": {
+    "name": "Khaled Mokhtar",
+    "url": "https://github.com/khaledmokhtar"
+  },
+  "homepage": "https://github.com/khaledmokhtar/i-have-blog",
+  "repository": "https://github.com/khaledmokhtar/i-have-blog",
+  "license": "MIT",
+  "skills": "./skills/blog-writer"
+}

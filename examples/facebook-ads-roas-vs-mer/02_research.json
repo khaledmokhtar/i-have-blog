@@ -1,0 +1,56 @@
+{
+  "topic": "Facebook Ads ROAS vs MER",
+  "primary_keyword": "roas vs mer",
+  "search_intent": "Searcher is comparing solutions and vetting options.",
+  "intent_category": "Commercial Investigation",
+  "dominant_serp_patterns": [
+    "Top results rely on high-level listicles (10–15 items) with thin descriptions.",
+    "Excessive theoretical advice without concrete numbers or financial formulas.",
+    "Neglect of operational bottlenecks (cash flow, team friction, support overhead).",
+    "Recycled manufacturer marketing copy rather than empirical field observations."
+  ],
+  "competitor_matrix": [
+    {
+      "dimension": "Introductory Definition",
+      "serp_rank_1_3": "High",
+      "serp_rank_4_10": "High",
+      "our_coverage": "Concise (1 paragraph)"
+    },
+    {
+      "dimension": "Feature Lists",
+      "serp_rank_1_3": "High",
+      "serp_rank_4_10": "Medium",
+      "our_coverage": "Contextual"
+    },
+    {
+      "dimension": "Field Math & Financial ROI",
+      "serp_rank_1_3": "None",
+      "serp_rank_4_10": "Low",
+      "our_coverage": "Comprehensive (Formulas + Proof)"
+    },
+    {
+      "dimension": "Real Failure Modes",
+      "serp_rank_1_3": "Low",
+      "serp_rank_4_10": "None",
+      "our_coverage": "Deep Teardown"
+    },
+    {
+      "dimension": "Contrarian Observations",
+      "serp_rank_1_3": "None",
+      "serp_rank_4_10": "None",
+      "our_coverage": "Core Angle"
+    }
+  ],
+  "information_gaps": [
+    "Hidden unit economics and real cost structure of Facebook Ads ROAS vs MER.",
+    "What to do when primary assumptions fail in production.",
+    "A step-by-step decision rubric instead of generic 'it depends'.",
+    "Specific benchmarks: what does 'good' look like in hard numbers."
+  ],
+  "unaddressed_questions": [
+    "At what volume or stage does Facebook Ads ROAS vs MER actually pay off?",
+    "What is the single most common reason teams fail when implementing Facebook Ads ROAS vs MER?",
+    "How do experienced operators measure real success vs surface metrics?"
+  ],
+  "opportunity_summary": "Competitors broadly cover introductory concepts and feature lists for 'Facebook Ads ROAS vs MER', but uniformly miss practical mathematical models, delivery realities, edge-case failure modes, and realistic switching/implementation costs."
+}

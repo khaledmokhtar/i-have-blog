@@ -1,0 +1,11 @@
+﻿{
+  "name": "i-have-blog",
+  "plugins": [
+    {
+      "name": "blog-writer",
+      "version": "1.0.0",
+      "description": "AI Editorial Operating System: Research first, think second, write third, verify fourth.",
+      "path": "../../skills/blog-writer"
+    }
+  ]
+}

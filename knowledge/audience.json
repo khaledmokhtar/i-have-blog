@@ -1,0 +1,22 @@
+﻿{
+  "primary_audiences": [
+    {
+      "persona": "E-Commerce Founder & Head of Growth",
+      "pain_points": [
+        "High ROAS on paper but declining bank balance",
+        "Rising CAC and poor conversion tracking after iOS privacy changes",
+        "Cash flow crunches caused by return rates and COD delivery delays"
+      ],
+      "vocabulary": ["MER", "blended CAC", "cash cycle", "fulfillment margin", "holdout tests"]
+    },
+    {
+      "persona": "Senior Media Buyer / Performance Marketer",
+      "pain_points": [
+        "Ad platform over-attribution and duplicated conversions",
+        "Fatiguing creative and volatile CPAs",
+        "Managing client expectations during seasonal volatility"
+      ],
+      "vocabulary": ["CAPI", "server-side tagging", "break-even ROAS", "scaling rules"]
+    }
+  ]
+}

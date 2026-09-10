@@ -1,0 +1,41 @@
+﻿{
+  "name": "i-have-blog",
+  "version": "1.0.0",
+  "description": "AI Editorial Operating System for Codex: Research, differentiate, claim-track, and publish.",
+  "author": {
+    "name": "Khaled Mokhtar",
+    "url": "https://github.com/khaledmokhtar"
+  },
+  "homepage": "https://github.com/khaledmokhtar/i-have-blog",
+  "repository": "https://github.com/khaledmokhtar/i-have-blog",
+  "license": "MIT",
+  "keywords": [
+    "blogging",
+    "editorial-system",
+    "seo",
+    "fact-checking",
+    "content-marketing",
+    "skills",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "I Have Blog (Editorial Engine)",
+    "shortDescription": "Editorial AI System for long-form authoritative blog posts",
+    "longDescription": "An architectural AI editorial system that replaces generic article generation with rigorous SERP gap analysis, claim tracking, proprietary knowledge integration, editorial punchiness, and semantic SEO.",
+    "developerName": "Khaled Mokhtar",
+    "category": "Content",
+    "capabilities": [
+      "Editorial",
+      "FactChecking",
+      "SEO",
+      "ContentRefresh"
+    ],
+    "websiteURL": "https://github.com/khaledmokhtar/i-have-blog",
+    "defaultPrompt": [
+      "Run the blog editorial pipeline for this topic.",
+      "Check this draft for AI clichés and claim verification.",
+      "Calculate the content decay score for this article."
+    ]
+  }
+}

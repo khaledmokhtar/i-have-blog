@@ -1,0 +1,6 @@
+﻿{
+  "name": "i-have-blog",
+  "version": "1.0.0",
+  "description": "AI Editorial Operating System for OpenCode",
+  "skills": ["skills/blog-writer"]
+}

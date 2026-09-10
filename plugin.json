@@ -1,0 +1,6 @@
+﻿{
+  "name": "i-have-blog",
+  "version": "1.0.0",
+  "description": "AI Editorial Operating System",
+  "entrypoint": "skills/blog-writer/SKILL.md"
+}

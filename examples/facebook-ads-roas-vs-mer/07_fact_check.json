@@ -1,0 +1,34 @@
+{
+  "verified_count": 0,
+  "modified_count": 0,
+  "rejected_count": 4,
+  "claims_audit": [
+    {
+      "claim_id": "C-005",
+      "status": "REJECTED",
+      "reason": "Missing from ledger"
+    },
+    {
+      "claim_id": "C-006",
+      "status": "REJECTED",
+      "reason": "Missing from ledger"
+    },
+    {
+      "claim_id": "C-007",
+      "status": "REJECTED",
+      "reason": "Missing from ledger"
+    },
+    {
+      "claim_id": "C-008",
+      "status": "REJECTED",
+      "reason": "Missing from ledger"
+    }
+  ],
+  "warnings": [
+    "Untracked claim found: C-005 lacks evidence entry.",
+    "Untracked claim found: C-006 lacks evidence entry.",
+    "Untracked claim found: C-007 lacks evidence entry.",
+    "Untracked claim found: C-008 lacks evidence entry."
+  ],
+  "passed": false
+}
