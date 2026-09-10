@@ -1,6 +1,6 @@
 ﻿<p align="center">
   <h1 align="center">i-have-blog</h1>
-  <p align="center"><strong>The AI Editorial Operating System for Authority, Differentiation, and Verified Truth</strong></p>
+  <p align="center"><strong>The AI Editorial Operating System</strong></p>
   <p align="center"><em>Research first. Think second. Write third. Verify fourth.</em></p>
 </p>
 
@@ -10,16 +10,24 @@
   <img src="https://img.shields.io/badge/Architecture-Deterministic%20Orchestrator-orange.svg" alt="Architecture">
   <img src="https://img.shields.io/badge/Diff%20Score-84.6%20%2F%20100-purple.svg" alt="Differentiation Score">
   <img src="https://img.shields.io/badge/Eval%20Benchmark-10%2F10%20Passed-success.svg" alt="Evaluation Passed">
+  <img src="https://img.shields.io/badge/CLI-Ready-blue.svg" alt="CLI Status">
   <img src="https://img.shields.io/badge/Platforms-Claude%20%7C%20Cursor%20%7C%20Codex%20%7C%20Gemini-indigo.svg" alt="Platforms">
 </p>
 
 <p align="center">
-  <a href="#-english-documentation">English Documentation</a> •
-  <a href="#-ملخص-معماري-باللغة-العربية">الملخص المعماري بالعربية</a> •
+  <strong title="English">🇬🇧 English</strong> •
+  <a href="README_AR.md" title="العربية">🇪🇬 العربية</a>
+</p>
+
+<p align="center">
+  <a href="#-the-core-thesis-why-another-ai-writer">Core Thesis</a> •
+  <a href="#-who-should-not-use-i-have-blog">Who Should NOT Use This</a> •
+  <a href="#-sample-output">Sample Output</a> •
+  <a href="#-system-architecture-the-10-stage-pipeline">Architecture</a> •
+  <a href="#-estimated-token-budget--costs">Token Budget</a> •
   <a href="#-quickstart--installation">Quickstart</a> •
-  <a href="#-the-10-stage-pipeline-architecture">Pipeline Architecture</a> •
-  <a href="#-evidence-layer--claim-registry">Claim Registry</a> •
-  <a href="#-benchmark-results">Benchmark Results</a>
+  <a href="#-troubleshooting-common-issues">Troubleshooting</a> •
+  <a href="#-roadmap">Roadmap</a>
 </p>
 
 ---
@@ -37,7 +45,7 @@ The internet is drowning in **AI Article Generators**. You give them a prompt (`
 
 ### `i-have-blog` is not an AI article generator. It is an **AI Editorial Operating System**.
 
-Inspired by the architectural rigor of [`ayghri/i-have-adhd`](https://github.com/ayghri/i-have-adhd) (which transformed LLM interaction through a single source of truth `SKILL.md`, multi-environment adapters, and blind candidate-vs-baseline evaluation), **`i-have-blog`** replaces random prompting with an **industrial-grade, artifact-driven editorial workflow**.
+Inspired by the architectural rigor of [`ayghri/i-have-adhd`](https://github.com/ayghri/i-have-adhd) (which proved that LLM excellence comes from a single source of truth `SKILL.md`, multi-environment adapters, and blind candidate-vs-baseline evaluation), **`i-have-blog`** replaces random prompting with an **industrial-grade, artifact-driven editorial workflow**.
 
 ```
 ❌ Generic AI:   Prompt  ───>  Wall of Generic AI Text  ───>  Published Fluff
@@ -48,6 +56,19 @@ Inspired by the architectural rigor of [`ayghri/i-have-adhd`](https://github.com
                          ───>  Cliché & Fluff Surgery  ───>  Internal Link Graph
                          ───>  Complete Publishing Package (Markdown + Schema + Meta)
 ```
+
+---
+
+## 🚫 Who Should NOT Use i-have-blog
+
+This system is **NOT** for everyone. It is deliberately engineered for high-authority publishers:
+
+- ❌ **Content Mills**: If you need 100+ low-effort, $2 SEO articles per month, this tool will feel too rigorous.
+- ❌ **Breaking News**: Not designed for sub-24h news commentary without deep research or math.
+- ❌ **Zero-Effort Seekers**: If you are unwilling to document your proprietary frameworks in `knowledge/`, your Differentiation Score will be capped.
+- ❌ **Unsupervised Auto-Publishing**: We believe editorial authority requires human review of the final package.
+
+> **`i-have-blog` is built for authority builders, technical founders, and operators—not content farms.**
 
 ---
 
@@ -88,6 +109,90 @@ Inspired by the architectural rigor of [`ayghri/i-have-adhd`](https://github.com
 </td>
 </tr>
 </table>
+
+---
+
+## 📝 Sample Output
+
+Here is what a generated `10_final_package.md` looks like for `"Facebook Ads ROAS vs MER"`:
+
+<details>
+<summary><strong>🔍 Click to expand complete sample article structure</strong></summary>
+
+```markdown
+---
+title: "Roas Vs Mer: The Field Guide Senior Operators Actually Use"
+slug: "roas-vs-mer"
+meta_description: "A complete, practical guide to Facebook Ads ROAS vs MER. Learn the real math, avoid critical failure modes, and apply battle-tested frameworks."
+differentiation_score: 77.0
+total_words: 478
+---
+
+# Roas Vs Mer: The Field Guide Senior Operators Actually Use
+
+> [!NOTE]
+> **Key Takeaways**:
+> - Focus on practical margins and execution, not surface metrics in Facebook Ads ROAS vs MER.
+> - Traditional checklists ignore delivery constraints and hidden costs.
+> - Implement step-by-step verification before scaling investment.
+
+## The Consensus Trap: What Everyone Gets Wrong About Facebook Ads ROAS vs MER
+
+Don't pick your approach based on the longest feature list or the most popular conference talk. Pick the system your team will actually execute under pressure. In practical testing across enterprise and growth environments, conventional checklists ignore the true driver of performance: contribution margin after accounting for operational friction.
+
+## The Core Mechanism: How It Actually Works Under The Hood
+
+At its foundation, Facebook Ads ROAS vs MER operates through a synchronized data exchange. When an interaction occurs, three downstream systems must validate the payload:
+
+1. **The Ingestion Gate**: Sanitizes input parameters and enforces schema validation.
+2. **The Attribution Engine**: Matches session identifiers against historical profile trees.
+3. **The Feedback Dispatcher**: Sends server-side conversion signals back to optimize targeting algorithms.
+
+## The Real Math: A Concrete Calculation Framework
+
+Here is the foundational calculation that separates mature operators from amateur marketers:
+
+$$\text{Contribution Margin} = \text{Net Revenue} - (\text{COGS} + \text{Media Spend} + \text{Fulfillment} + \text{Return Overhead})$$
+
+Consider a concrete scenario:
+
+| Metric | Amateur Model | Real-World Operator Model |
+| :--- | :--- | :--- |
+| Gross Revenue | $10,000 | $10,000 |
+| Ad Spend (ROAS 4x) | $2,500 | $2,500 |
+| Product Cost (COGS) | $3,000 | $3,000 |
+| Fulfillment & Shipping | Ignored | $1,800 |
+| Cash-on-Delivery Loss / Return Rate (22%) | Ignored | $1,200 |
+| **Real Contribution Profit** | **+$4,500** | **+$1,500** |
+
+Notice the $3,000 discrepancy. A campaign that looks like a runaway winner on paper can secretly drain company cash flow.
+
+## 3 Costly Failure Modes (And How Senior Teams Prevent Them)
+
+- **Failure Point 1: Duplicate Conversion Attribution**: When both client-side pixels and server-side APIs fire without deduplication tokens, the platform bids aggressively on phantom buyers.
+- **Failure Point 2: Ignoring Cash Velocity**: Spending ad budget on 45-day receivable payment terms creates an artificial liquidity crunch.
+- **Failure Point 3: Siloed Analytics**: Measuring channel performance in isolation instead of tracking blended Marketing Efficiency Ratio (MER).
+
+## Frequently Asked Questions
+
+### Why does standard advice on Facebook Ads ROAS vs MER often fail?
+Most public guides optimize for high-level vanity metrics rather than real contribution margin and unit economics.
+
+## Schema JSON-LD
+```json
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Roas Vs Mer: The Field Guide Senior Operators Actually Use",
+      "url": "https://blog.example.com/roas-vs-mer"
+    }
+  ]
+}
+```
+```
+</details>
 
 ---
 
@@ -146,24 +251,24 @@ flowchart TD
 
 ---
 
-## 🔍 Intermediate Artifacts Breakdown
+## 💰 Estimated Token Budget & Costs
 
-Every stage produces a persistent, inspectable artifact under `projects/<slug>/`, making the system **100% debuggable**:
+Running the complete 10-stage editorial pipeline for an authoritative 2,000 to 2,500-word article:
 
-```
-projects/facebook-ads-roas-vs-mer/
-├── 01_brief.json            # Target keyword, topic, audience persona, word count goals
-├── 02_research.json         # Search intent, SERP coverage matrix, missing competitor gaps
-├── 03_strategy.json         # Entity footprints, secondary keywords, contrarian angle
-├── 04_outline.json          # Architectural headings with explicit section intent
-├── 05_evidence.json         # Evidence Ledger cataloging [claim:C-xxx] statements
-├── 06_draft.md              # Section-by-section draft with embedded claim tags
-├── 07_fact_check.json       # Audit verifying every claim against freshness policies
-├── 08_editorial_audit.json  # Cliché removal log, punchiness score, Differentiation Score
-├── 09_internal_links.json   # High-intent semantic anchor recommendations
-├── 10_final_package.json    # Complete structured JSON metadata and Schema
-└── 10_final_package.md      # Production-ready Markdown with Schema JSON-LD & FAQ
-```
+| Stage | Estimated Input Tokens | Estimated Output Tokens | Primary Model Workload |
+| :--- | :---: | :---: | :--- |
+| **01 Brief & Research** | 2,200 | 1,400 | Search intent & SERP matrix synthesis |
+| **02 Strategy & Entities** | 1,800 | 900 | Entity mapping & contrarian angle selection |
+| **03 Outline Architecture** | 1,500 | 850 | Structured H2/H3 section targets |
+| **04 Evidence Registry** | 1,200 | 600 | Claim cataloging & indexing `[claim:C-xxx]` |
+| **05 Section Writing (×5)** | 7,500 | 5,200 | Deep technical & empirical prose generation |
+| **06 Fact & Freshness Check** | 2,800 | 450 | Auditing claim timestamps & sources |
+| **07 Editorial Fluff Surgery** | 2,200 | 350 | Cliché removal & Differentiation Scoring |
+| **08 Internal Links & Package** | 1,600 | 800 | Anchors, Schema JSON-LD, and metadata |
+| **TOTAL** | **~20,800** | **~10,500** | **Estimated Total: ~31,300 tokens** |
+
+> [!TIP]
+> **Cost Benchmark**: At standard commercial LLM pricing (~$5 to $10 per 1M blended tokens), each comprehensive, fact-checked publication package costs **between $0.20 and $0.32**.
 
 ---
 
@@ -256,7 +361,9 @@ Using our blind evaluation suite in `evals/`, candidate outputs from `i-have-blo
 
 ## ⚡ Quickstart & Installation
 
-### Option 1: Standalone Python CLI
+The Python CLI is fully built and operational today.
+
+### 1. Standalone Python CLI
 
 ```bash
 # Clone the repository
@@ -279,10 +386,9 @@ blog-engine evals
 blog-engine judge
 ```
 
-### Option 2: Claude Code Plugin
+### 2. Claude Code Plugin
 
 ```bash
-# Add the plugin to Claude Code
 claude plugin marketplace add khaledmokhtar/i-have-blog
 claude plugin install blog-writer@i-have-blog
 ```
@@ -291,86 +397,61 @@ claude plugin install blog-writer@i-have-blog
 /blog "Write an authoritative guide on E-commerce Cash on Delivery unit economics"
 ```
 
-### Option 3: Cursor IDE Skill
+### 3. Cursor IDE Skill
 
-The repository includes `.cursor/skills/blog-writer/SKILL.md`. Cursor automatically recognizes it. Simply open Cursor chat (`Cmd+L` or `Ctrl+L`) and type:
+The repository includes `.cursor/skills/blog-writer/SKILL.md`. Cursor automatically recognizes it. Open Cursor chat (`Cmd+L` or `Ctrl+L`) and type:
 ```text
 Use the blog-writer skill to research and outline an article on Meta CAPI Deduplication.
 ```
 
-### Option 4: Google Gemini CLI
+### 4. Google Gemini CLI
 
 The repository includes `gemini-extension.json` and `GEMINI.md`. Gemini CLI binds the editorial guidelines automatically.
 
 ---
 
-## 📁 Repository Map
+## 🛠️ Troubleshooting Common Issues
 
-```
-i-have-blog/
-├── .cursor/skills/blog-writer/SKILL.md     # Cursor skill mirror
-├── .claude-plugin/                         # Claude Code manifest
-├── .codex-plugin/                          # OpenAI Codex plugin
-├── .github/workflows/                      # CI and Evals GitHub Actions
-├── skills/blog-writer/
-│   └── SKILL.md                            # THE SINGLE SOURCE OF TRUTH
-├── core/                                   # Engine Orchestrator, State & Schemas
-│   ├── orchestrator.py
-│   ├── state.py
-│   ├── schemas.py
-│   ├── config.py
-│   └── claim_registry.py
-├── pipelines/                              # The 8 Modular Editorial Pipelines
-│   ├── research.py
-│   ├── strategy.py
-│   ├── outline.py
-│   ├── writer.py
-│   ├── fact_checker.py
-│   ├── editorial_pass.py
-│   ├── internal_links.py
-│   └── refresh.py
-├── knowledge/                              # Proprietary Knowledge Layer
-│   ├── brand.json
-│   ├── audience.json
-│   ├── expertise/
-│   └── frameworks/
-├── evidence/                               # Claim Ledger & Freshness Policy
-├── evals/                                  # Benchmark Test Cases & Blind Rubric
-├── scripts/                                # Evaluation Runner & Judge Scripts
-├── tests/                                  # Comprehensive Unit Tests
-├── examples/                               # Sample Project Output Artifacts
-├── cli.py                                  # Unified CLI Entrypoint
-├── AGENTS.md                               # Operational Agent Instructions
-├── ARCHITECTURE.md                         # Deep Technical Specification
-├── INSTALL.md                              # Multi-Platform Setup Guide
-├── KNOWLEDGE_GUIDE.md                      # Customizing Knowledge Layer
-├── EVALUATION_GUIDE.md                     # Running Blind Evaluations
-├── CONTRIBUTING.md                         # Contribution Guidelines
-└── README.md                               # Flagship Documentation
-```
+### Issue: "Differentiation Score is stuck at 50.0"
+- **Cause:** Your draft lacks worked mathematical equations, empirical tables, or proprietary frameworks from `knowledge/`.
+- **Fix:**
+  1. Add a Markdown table with hard benchmarks or comparative metrics.
+  2. Include a worked formula using LaTeX (`$$\text{Metric} = ...$$`).
+  3. Ensure `knowledge/frameworks/` contains at least one documented framework matching your niche.
+
+### Issue: "Fact Check failing on TIME_SENSITIVE claims"
+- **Cause:** A pricing, API, or software feature claim has a verification date older than 4 months.
+- **Fix:**
+  1. Verify the current documentation or pricing URL.
+  2. Update the `verified_at` date in `evidence.json`.
+  3. Re-run `blog-engine run --topic ...`.
+
+### Issue: "Internal linking suggestions are empty"
+- **Cause:** `content/clusters.json` or `content/articles/` has no cataloged existing posts.
+- **Fix:**
+  1. Add your published blog post slugs into `content/articles/sample_articles.json`.
+  2. Define parent topic clusters in `content/clusters.json`.
 
 ---
 
-## 🇪🇬 ملخص معماري باللغة العربية
+## 🗺️ Roadmap
 
-### لماذا بنينا `i-have-blog`؟
+### Q4 2026
+- [ ] Google Search Console API integration for automated Content Decay calculation.
+- [ ] Automated SERP scraping connector (SerpAPI / DataForSEO).
+- [ ] Full Arabic language prompt optimization.
 
-أغلب أدوات كتابة المقالات بالذكاء الاصطناعي تعمل كـ **AI Article Generator**: تعطيها كلمة مفتاحية، فتنتج 2500 كلمة من الحشو، والمقدمات المحفوظة (*"في عالمنا الرقمي المتسارع اليوم..."*)، وإعادة تدوير ما هو موجود بالفعل في أول ثلاث نتائج على Google. والنتيجة هي **المقال الحادي عشر المكرر** الذي لا يقرأه أحد ولا يتصدر محركات البحث على المدى الطويل.
+### Q1 2027
+- [ ] Direct publishing adapters for WordPress REST API and Ghost CMS.
+- [ ] Notion and Airtable editorial calendar synchronization.
+- [ ] Multi-author collaborative approval workflows.
 
-**`i-have-blog` ليس كاتب مقالات آلي، بل نظام تحرير ذكي متكامل (AI Editorial Operating System).**
+---
 
-### الركائز الخمس للنظام:
+## 🤝 Contributing
 
-1. **مصدر واحد للحقيقة (`SKILL.md`)**:
-   جميع القواعد التحريرية مستمدة من ملف مركزي واحد متوافق مع كافة المنصات (Claude Code, Cursor, Codex, Gemini).
-2. **منسق واحد وتدفق مراحل دقيق (Orchestrator Pattern)**:
-   بدلًا من الفوضى الناتجة عن 13 وكيلًا يتحدثون مع بعضهم ويهدرون الـ Tokens ويغيرون السياق، يعتمد النظام على منسق مركزي واحد ينفذ مراحل محددة تنتج ملفات مرحلية قابلة للفحص والتصحيح (`01_brief.json` إلى `10_final_package.md`).
-3. **سجل الادعاءات وفحص الحقائق (Evidence Ledger & Claim Registry)**:
-   كل حقيقة، إحصائية، أو معادلة يتم تسجيلها بكود داخلي `[claim:C-xxx]` مع فحص مدة حداثة المصدر والتأكد من عدم وجود أي هلاوس.
-4. **طبقة المعرفة الحصرية ونسبة التميز (Proprietary Knowledge & Differentiation Score)**:
-   يدمج النظام خبرات صاحب الموقع، أرقامه الميدانية، ومعادلاته الخاصة (مثل حساب هوامش الربح الحقيقية لـ COD و ROAS vs MER)، ويحسب درجة تميز المقال بحيث لا يُنشر إلا إذا تخطت النتيجة **70 / 100**.
-5. **محرك تجديد المحتوى وتراجع الزيارات (Content Decay Engine)**:
-   النظام لا يكتفي بكتابة مقالات جديدة، بل يقيس نسبة تقادم المقالات القديمة ويحدد إجراء التحديث بدقة (KEEP, UPDATE, EXPAND, REMOVE, MERGE, REDIRECT).
+We welcome contributions from editorial engineers and developers!
+Please review [`CONTRIBUTING.md`](CONTRIBUTING.md) for testing guidelines, coding conventions, and PR templates.
 
 ---
 

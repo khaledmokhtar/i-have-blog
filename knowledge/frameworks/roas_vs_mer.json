@@ -1,0 +1,22 @@
+﻿{
+  "framework_id": "FW-001",
+  "name": "ROAS vs MER Profitability Matrix",
+  "description": "Why in-platform ROAS is an accounting illusion and how blended MER protects cash flow.",
+  "primary_equation": "MER = Total Net Revenue / Total Media Spend",
+  "contribution_equation": "Contribution Margin = Net Revenue - (COGS + Media Spend + Delivery + Returns)",
+  "key_insights": [
+    "Platforms take 100% credit for conversions they touched, leading to 20-35% duplicated attribution.",
+    "A 4x ROAS on paper can be cash-flow negative when return rates exceed 20% in COD markets.",
+    "Blended MER provides a tamper-proof ground truth across all acquisition channels."
+  ],
+  "benchmarks": {
+    "danger_zone_mer": "< 2.5x",
+    "sustainable_mer": "3.5x - 4.5x",
+    "market_leader_mer": "> 5.5x"
+  },
+  "use_cases": [
+    "E-Commerce & D2C Growth",
+    "Cash-on-Delivery Delivery Analysis",
+    "Multi-Channel Media Buying"
+  ]
+}
